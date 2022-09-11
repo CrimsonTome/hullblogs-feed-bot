@@ -1,0 +1,20 @@
+{
+  "name": "hullblogs-feed-bot",
+  "version": "0.0.1",
+  "description": "Discord.js bot that notifies when a new post appears on hullblogs.com ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrimsonTome/hullblogs-feed-bot.git"
+  },
+  "keywords": [],
+  "author": "Rowan Clark",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/CrimsonTome/hullblogs-feed-bot/issues"
+  },
+  "homepage": "https://github.com/CrimsonTome/hullblogs-feed-bot#readme"
+}
