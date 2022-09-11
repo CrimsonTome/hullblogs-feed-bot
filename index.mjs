@@ -26,15 +26,27 @@ http.get('http://crimsontome.com/feed/feed.xml', (res) => {
     console.error(new Error(`status code ${res.statusCode}`));
     return;
   }
-  let parser = new FeedMe();
+  let parser = new FeedMe(true);
   parser.on('title', (title) => {
     console.log('title of feed is', title);
   });
   parser.on('item', (item) => {
     console.log();
+	// send a discord message cotaining these
+
     console.log('Post:', item.title);
-	console.log("URL: ", item.link);
+	console.log("Link: ", item.id);
+
+	client.channels.fetch("1018513941841858620").then(channel => {
+		channel.send('Post:', item.title);
+		console.log("Link: ", item.id);	
+	  })
+
+
     // console.log(item.description);
   });
   res.pipe(parser);
+	//parser.on('finish', () => {
+	//console.log(parser.done());
+	//});
 });
