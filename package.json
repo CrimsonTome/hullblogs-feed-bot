@@ -20,6 +20,7 @@
   "homepage": "https://github.com/CrimsonTome/hullblogs-feed-bot#readme",
   "dependencies": {
     "discord.js": "^13.10.2",
+    "dotenv": "^16.0.2",
     "feedparser": "^2.2.10",
     "node-fetch": "^3.2.10"
   }
