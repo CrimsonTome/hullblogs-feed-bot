@@ -39,7 +39,11 @@ http.get('http://crimsontome.com/feed/feed.xml', (res) => {
 
 	client.channels.fetch("1018513941841858620").then(channel => {
 		channel.send('Post:', item.title);
+<<<<<<< HEAD
 		console.log("Link: ", item.id);	
+=======
+		channel.send("Link: ", item.id);	
+>>>>>>> 4064bc5 (add test message send - doesnt work)
 	  })
 
 
