@@ -1,9 +1,7 @@
 "use strict";
 
 import Client from "discord.js"; // for sending discord messages
-import FeedParser from "feedparser"; // for parsing feeds
-import Fetch from "node-fetch"; // for fetching the feed
-
+import FeedMe from'feedme'; // for parsing the feed
 
 import dotenv from "dotenv";
 dotenv.config(); //for secret management
@@ -17,3 +15,26 @@ client.once('ready', () => {
 }); //confirmation when client is ready
 
 client.login(process.env.DISCORD_TOKEN); //login using discord token from env variable
+
+
+
+
+import http from 'http';
+
+http.get('http://crimsontome.com/feed/feed.xml', (res) => {
+  if (res.statusCode != 200) {
+    console.error(new Error(`status code ${res.statusCode}`));
+    return;
+  }
+  let parser = new FeedMe();
+  parser.on('title', (title) => {
+    console.log('title of feed is', title);
+  });
+  parser.on('item', (item) => {
+    console.log();
+    console.log('Post:', item.title);
+	console.log("URL: ", item.link);
+    // console.log(item.description);
+  });
+  res.pipe(parser);
+});
