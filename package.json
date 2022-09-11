@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CrimsonTome/hullblogs-feed-bot/issues"
   },
-  "homepage": "https://github.com/CrimsonTome/hullblogs-feed-bot#readme"
+  "homepage": "https://github.com/CrimsonTome/hullblogs-feed-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.3.0"
+  }
 }
