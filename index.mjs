@@ -2,7 +2,7 @@
 
 import Client from "discord.js"; // for sending discord messages
 import FeedMe from'feedme'; // for parsing the feed
-
+import http from 'http'; // for fetching the feed
 import dotenv from "dotenv";
 dotenv.config(); //for secret management
 
@@ -19,7 +19,7 @@ client.login(process.env.DISCORD_TOKEN); //login using discord token from env va
 
 
 
-import http from 'http';
+
 
 http.get('http://crimsontome.com/feed/feed.xml', (res) => {
   if (res.statusCode != 200) {
@@ -37,15 +37,9 @@ http.get('http://crimsontome.com/feed/feed.xml', (res) => {
     console.log('Post:', item.title);
 	console.log("Link: ", item.id);
 
-	client.channels.fetch("1018513941841858620").then(channel => {
-		channel.send('Post:', item.title);
-<<<<<<< HEAD
-		console.log("Link: ", item.id);	
-=======
-		channel.send("Link: ", item.id);	
->>>>>>> 4064bc5 (add test message send - doesnt work)
-	  })
-
+	const channel = client.channels.cache.get('1018513941841858620');
+	channel.send('Post:', item.title);
+	channel.send("Link: ", item.id); 
 
     // console.log(item.description);
   });
