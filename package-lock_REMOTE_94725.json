@@ -13,12 +13,8 @@
         "dotenv": "^16.0.2",
         "feedme": "^2.0.2",
         "node-fetch": "^3.2.10",
-<<<<<<< HEAD
-        "phin": "^3.6.1"
-=======
         "phin": "^3.6.1",
         "wget": "^0.0.1"
->>>>>>> 31009d2 (add some mess)
       }
     },
     "node_modules/@discordjs/builders": {

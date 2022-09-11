@@ -1,10 +1,13 @@
 "use strict";
 
-import { Client } from 'discord.js'; // for sending discord messages
+import  {Client}  from 'discord.js'; // for sending discord messages
 import FeedMe from 'feedme'; // for parsing the feed
 import http from 'http'; // for fetching the feed
 import dotenv from 'dotenv';
 dotenv.config(); //for secret management
+import wget from 'wget';
+
+import phin from 'phin';
 
 const client = new Client({
 	intents: 98819,
@@ -17,17 +20,29 @@ await new Promise((resolve, reject) => {
     client.once("error", reject);
 });
 
-http.get('http://crimsontome.com/feed/feed.xml', (res) => {
-  if (res.statusCode != 200) {
-    console.error(new Error(`status code ${res.statusCode}`));
-    return;
-  }
+// http.get('https://raw.githubusercontent.com/FreesideHull/hullblogs.com/main/feeds.json', (res) => {
+//   if (res.statusCode != 200) {
+//     console.error(new Error(`status code ${res.statusCode}`));
+//     return;
+//   }
+
+var src = 'https://hullblogs.com/feed.xml';
+var output = '/tmp/data.json';
+var options = {
+    proxy: 'https://host:port'
+};
+var download = wget.download(src, output);
+download.on('error', function(err) {
+    console.log(err);
+});
+download.on('end', function(output) {
+    console.log(output);
+});
+// download.on('progress', function(progress) {
+//     // code to show progress bar
+// });
 
   let parser = new FeedMe(true);
-  parser.on('title', (title) => {
-    console.log('title of feed is', title);
-  });
-
   parser.on('item', (item) => {
     // send a discord message containing these
     console.log('Post:', item.title);
@@ -39,8 +54,7 @@ http.get('http://crimsontome.com/feed/feed.xml', (res) => {
 
     // console.log(item.description);
   });
-  res.pipe(parser);
+   //wget.pipe(parser);
 	//parser.on('finish', () => {
 	//console.log(parser.done());
 	//});
-});
