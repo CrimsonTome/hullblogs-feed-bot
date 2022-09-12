@@ -13,6 +13,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "CrimsonTome",
+      "name": "CTome",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64846840?v=4",
+      "profile": "https://links.crimsontome.com",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
