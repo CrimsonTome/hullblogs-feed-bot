@@ -39,6 +39,17 @@ todo
 
 Contributors include [CrsimsonTome / Rowan Clark](https://github.com/crimsontome) and [Kieran Robson]("https://github.com/kieranrobson")
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+
+
 ## License
 
 hullblogs-feed-bot is licensed under the Apache 2.0. The full license text is included in the [LICENSE](LICENSE) file in this repository. Tldr legal have a [great summary](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)) of the license if you're interested.
