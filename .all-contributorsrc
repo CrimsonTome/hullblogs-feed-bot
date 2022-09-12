@@ -23,6 +23,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "sbrl",
+      "name": "Starbeamrainbowlabs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9929737?v=4",
+      "profile": "https://starbeamrainbowlabs.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
