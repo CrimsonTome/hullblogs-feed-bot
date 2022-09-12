@@ -47,8 +47,8 @@ Contributors include [CrsimsonTome / Rowan Clark](https://github.com/crimsontome
 <table>
   <tbody>
     <tr>
+ <td align="center"><a href="https://links.crimsontome.com"><img src="https://avatars.githubusercontent.com/u/64846840?v=4?s=100" width="100px;" alt=""/><br /><sub><b>CTome</b></sub></a><br /><a href="https://github.com/CrimsonTome/hullblogs-feed-bot/commits?author=CrimsonTome" title="Code">💻</a> <a href="https://github.com/CrimsonTome/hullblogs-feed-bot/commits?author=CrimsonTome" title="Documentation">📖</a></td>
       <td align="center"><a href="https://github.com/KieranRobson"><img src="https://avatars.githubusercontent.com/u/32241933?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kieran</b></sub></a><br /><a href="https://github.com/CrimsonTome/hullblogs-feed-bot/commits?author=KieranRobson" title="Code">💻</a></td>
-      <td align="center"><a href="https://links.crimsontome.com"><img src="https://avatars.githubusercontent.com/u/64846840?v=4?s=100" width="100px;" alt=""/><br /><sub><b>CTome</b></sub></a><br /><a href="https://github.com/CrimsonTome/hullblogs-feed-bot/commits?author=CrimsonTome" title="Code">💻</a> <a href="https://github.com/CrimsonTome/hullblogs-feed-bot/commits?author=CrimsonTome" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
