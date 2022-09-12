@@ -35,6 +35,9 @@ todo
  - push your changes with `git push`
  - open a pull request via github browser or with `gh pr create` and follow the prompts
    
+## Contributors
+
+Contributors include [CrsimsonTome / Rowan Clark](https://github.com/crimsontome) and [Kieran Robson]("https://github.com/kieranrobson")
 
 ## License
 
