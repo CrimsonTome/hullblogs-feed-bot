@@ -1,4 +1,7 @@
 # hullblogs-feed-bot
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Discord.js bot that notifies when a new post appears on hullblogs.com 
 
@@ -38,6 +41,21 @@ todo
 ## Contributors
 
 Contributors include [CrsimsonTome / Rowan Clark](https://github.com/crimsontome) and [Kieran Robson]("https://github.com/kieranrobson")
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/KieranRobson"><img src="https://avatars.githubusercontent.com/u/32241933?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kieran</b></sub></a><br /><a href="https://github.com/CrimsonTome/hullblogs-feed-bot/commits?author=KieranRobson" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
