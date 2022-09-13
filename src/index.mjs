@@ -2,12 +2,10 @@
 
 import  {Client}  from 'discord.js'; // for sending discord messages
 import FeedMe from 'feedme'; // for parsing the feed
-import http from 'http'; // for fetching the feed
+
 import dotenv from 'dotenv';
 dotenv.config(); //for secret management
 import wget from 'wget';
-
-import phin from 'phin';
 
 const client = new Client({
 	intents: 98819,

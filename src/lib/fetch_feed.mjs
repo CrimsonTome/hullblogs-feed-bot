@@ -7,7 +7,7 @@ import FeedMe from 'feedme'; // for parsing the feed
 import fetch_as_stream from "./fetch_as_stream.mjs";
 
 
-function do_parse(stream) {
+export function do_parse(stream) {
 	return new Promise((resolve, reject) => {
 		let feed = {
 			title: null,
@@ -21,8 +21,8 @@ function do_parse(stream) {
 
 		parser.on('item', (item) => {
 			// send a discord message containing these
-			console.log('Post:', item.title);
-			console.log("Link: ", item.id);
+			// console.log('Post:', item.title);
+			// console.log("Link: ", item.id);
 			item.real_link = item.link.href ?? item.id;
 			// console.log(item);
 			// console.log(item.description);
