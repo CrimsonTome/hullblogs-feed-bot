@@ -8,4 +8,4 @@ RUN npm install
 
 COPY . /usr/hullblogs-feed-bot/src
 
-CMD ["node", "src/index.js"]
+CMD ["node", "src/index.mjs"]

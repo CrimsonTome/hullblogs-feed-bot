@@ -18,13 +18,20 @@
  - run `npm i` to install all packages
  - run `npm run start` or `node .` / `node src/index.mjs` (if you are in the repo root)
 
-## Building
+## Building and running
 
 ### Node
 
  - `npm i && npm run start`
 
 ### Docker
+
+(dockerfile adapted from [KieranRobson/Clarence-Bot](https://github.com/KieranRobson/Clarence-Bot))
+
+ - `sudo docker build -t feed-bot .`
+ - 'sudo docker run --name=feed-bot'
+
+## Dockerfile
 
 ```dockerfile
 FROM node:16.14
