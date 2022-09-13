@@ -1,4 +1,4 @@
-FROM node:stable
+FROM node:16.14
 
 RUN mkdir -p /usr/hullblogs-feed-bot/src
 WORKDIR /usr/hullblogs-feed-bot/src

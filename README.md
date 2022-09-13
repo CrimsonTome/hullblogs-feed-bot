@@ -16,7 +16,7 @@
  - `cd` into the repo folder
  - make your changes to the code / files (you will need a file called .env containing `DISCORD_TOKEN = YOUR-TOKEN-HERE`)
  - run `npm i` to install all packages
- - run `npm run start` or `node .` / `node index.mjs` (if you are in the repo root)
+ - run `npm run start` or `node .` / `node src/index.mjs` (if you are in the repo root)
 
 ## Building
 
@@ -26,7 +26,19 @@
 
 ### Docker
 
-todo
+```dockerfile
+FROM node:16.14
+
+RUN mkdir -p /usr/hullblogs-feed-bot/src
+WORKDIR /usr/hullblogs-feed-bot/src
+
+COPY package.json /usr/hullblogs-feed-bot/src
+RUN npm install
+
+COPY . /usr/hullblogs-feed-bot/src
+
+CMD ["node", "src/index.mjs"]
+```
 
 ## Contributing
 
