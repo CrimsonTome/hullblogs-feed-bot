@@ -31,7 +31,7 @@ Production ready: no
 (dockerfile adapted from [KieranRobson/Clarence-Bot](https://github.com/KieranRobson/Clarence-Bot))
 
  - `sudo docker build -t feed-bot .`
- - 'sudo docker run --name=feed-bot'
+ - `sudo docker run -itd --name=feed-bot feed-bot`
 
 ## Dockerfile
 
