@@ -5,6 +5,8 @@
 
 > Discord.js bot that notifies when a new post appears on hullblogs.com 
 
+Production ready: no
+
 ## System requirements
 
  - NodeJS
